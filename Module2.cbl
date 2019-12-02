@@ -20,7 +20,7 @@
            MOVE '12ABC34DEF56GHI78KLM90NOP' TO TABL.                    00111000
            PERFORM FIRST-PARA VARYING I FROM 1 BY 1 UNTIL I > 3.        00120000
            PERFORM SEARCH-PARA.                                         00130000
-           DISPLAY'CODE EDITED FROM OpenCOBOL IDE '.
+           DISPLAY'CODE EDITED FROM OpenCOBOL IDE'.
 
            DISPLAY 'HELLO'.
            STOP RUN.                                                    00140000
