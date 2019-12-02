@@ -1,13 +1,20 @@
-000100 IDENTIFICATION DIVISION.                                         
-000200 PROGRAM-ID. PGMCOB.                                              
-000300 ENVIRONMENT DIVISION.                                            
-000400 DATA DIVISION.                                                   
-000500 WORKING-STORAGE SECTION.                                         
-       01 WS-VAR PIC X(5).                                              
-000600 PROCEDURE DIVISION.                                              
-000700 MAIN-PARA.                                                       
-           ACCEPT WS-VAR.                                               
-000800     DISPLAY '*******   TESTING   ********'.                      
-           DISPLAY WS-VAR.                                              
+000100 IDENTIFICATION DIVISION.                                         00010001
+000200 PROGRAM-ID. PGMCOB.                                              00020002
+000300 ENVIRONMENT DIVISION.                                            00030002
+000400 DATA DIVISION.                                                   00040002
+000500 WORKING-STORAGE SECTION.                                         00050002
+       01 WS-VAR PIC X(5).                                              00052006
+       01 WS-A PIC 9(2).
+       01 WS-B PIC 9(2).
+       77 WS-RESULT PIC 9(4).
+000600 PROCEDURE DIVISION.                                              00060002
+000700 MAIN-PARA.                                                       00070002
+           ACCEPT WS-VAR.                                               00071006
+000800     DISPLAY '*******   TESTING   ********'.                      00080002
+           DISPLAY WS-VAR.                                              00081006
            DISPLAY 'PGMCOB HAS BEEN EDITED IN GNU COBOL IDE'.
-000900     STOP RUN.                                                    
+           MOVE 2 TO WS-A.
+           MOVE 3 TO WS-B.
+           ADD WS-A TO WS-B GIVING WS-RESULT.
+           DISPLAY 'ADDITION OF WS-A AND WS-B IS:' WS-RESULT.
+000900     STOP RUN.                                                    00090002
