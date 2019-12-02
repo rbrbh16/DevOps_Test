@@ -1,0 +1,13 @@
+000100 IDENTIFICATION DIVISION.                                         
+000200 PROGRAM-ID. PGMCOB.                                              
+000300 ENVIRONMENT DIVISION.                                            
+000400 DATA DIVISION.                                                   
+000500 WORKING-STORAGE SECTION.                                         
+       01 WS-VAR PIC X(5).                                              
+000600 PROCEDURE DIVISION.                                              
+000700 MAIN-PARA.                                                       
+           ACCEPT WS-VAR.                                               
+000800     DISPLAY '*******   TESTING   ********'.                      
+           DISPLAY WS-VAR.                                              
+           DISPLAY 'PGMCOB HAS BEEN EDITED IN GNU COBOL IDE'.
+000900     STOP RUN.                                                    
