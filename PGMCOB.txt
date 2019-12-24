@@ -17,5 +17,5 @@
            MOVE 3 TO WS-B.
            ADD WS-A TO WS-B GIVING WS-RESULT.
            DISPLAY 'ADDITION OF WS-A AND WS-B IS:' WS-RESULT.
-           DISPLAY 'Final result is :' WS-RESULT.
+           
 000900     STOP RUN.                                                    00090002
